@@ -10,13 +10,13 @@ Aplikasi CRUD biodata (tambah, edit, hapus, upload foto) memakai **PHP**, **MySQ
       <img src="uploads/seed_arya.jpg" width="200" alt="Muhammad Arya Nanda"><br>
       <b>Muhammad Arya Nanda</b><br>
       24010110174<br>
-      Master / Back-end
+      colaborators/ Back-end
     </td>
     <td align="center">
       <img src="uploads/seed_zagita.jpg" width="200" alt="Zagita Suci Rahmadani"><br>
       <b>Zagita Suci Rahmadani</b><br>
       24010110185<br>
-      Pegawai / Front-end
+      Master/ Front-end
     </td>
   </tr>
 </table>
