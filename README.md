@@ -48,8 +48,8 @@ uts_pemweb/
 
 | Bagian | Pengerjaan | File |
 |---|---|---|
-| Front-end | Arya | `index.php`, `tambah.php`, `edit.php`, `layout/` |
-| Back-end | Zagita | `config/`, `proses/`, `database.sql` |
+| Front-end | zagita | `index.php`, `tambah.php`, `edit.php`, `layout/` |
+| Back-end | arya| `config/`, `proses/`, `database.sql` |
 
 ## Cara Menjalankan
 
