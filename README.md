@@ -1,14 +1,60 @@
 # UTS Pem Web
 
+Aplikasi CRUD biodata (tambah, edit, hapus, upload foto) memakai **PHP**, **MySQL**, dan **Bootstrap 5**.
 
-Navigasi Header (Navbar): Menampilkan judul proyek (UTS Pem Web), menu navigasi (Home, Features), serta informasi identitas mahasiswa (Muhammad Arya Nanda - 24010110174).
+## Tim
 
-Manajemen Data Berbasis CRUD (Create, Read, Update, Delete):
+<table>
+  <tr>
+    <td align="center">
+      <img src="uploads/seed_arya.jpg" width="200" alt="Muhammad Arya Nanda"><br>
+      <b>Muhammad Arya Nanda</b><br>
+      24010110174<br>
+      Master / Front-end
+    </td>
+    <td align="center">
+      <img src="uploads/seed_zagita.jpg" width="200" alt="Zagita Suci Rahmadani"><br>
+      <b>Zagita Suci Rahmadani</b><br>
+      24010110185<br>
+      Pegawai / Back-end
+    </td>
+  </tr>
+</table>
 
-Tambah Data (Create): Tombol dengan ikon tanda tambah (+) berwarna hijau di dalam kartu pertama untuk menambahkan profil anggota/data baru.
+## Struktur Folder
 
-Tampil Data (Read): Tampilan grid berbasis kartu (Card UI) yang memuat foto profil, nama lengkap, serta deskripsi peran dan NIM masing-masing anggota tim (Muhammad Arya Nanda dan Zagita Suci Rahmadani).
+```
+uts_pemweb/
+├── config/
+│   ├── .htaccess        # blokir akses file .sqlite
+│   ├── fungsi.php       # fungsi bantu: session, validasi, upload foto
+│   └── koneksi.php      # koneksi database (PDO)
+├── layout/
+│   ├── header.php       # navbar + alert pesan
+│   └── footer.php       # footer
+├── proses/
+│   ├── tambah.php       # proses simpan biodata baru
+│   ├── edit.php         # proses update biodata
+│   └── hapus.php        # proses hapus biodata
+├── uploads/             # foto biodata
+├── database.sql         # struktur tabel + data awal
+├── index.php            # halaman utama (daftar kartu)
+├── tambah.php           # form tambah biodata
+├── edit.php             # form edit biodata
+└── README.md
+```
 
-Ubah Data (Update): Tombol Edit berwarna biru pada setiap kartu untuk memperbarui informasi atau foto anggota yang sudah ada.
+## Pembagian Tugas
 
-Hapus Data (Delete): Tombol Hapus berwarna merah pada setiap kartu untuk menghapus data anggota dari daftar.
+| Bagian | Pengerjaan | File |
+|---|---|---|
+| Front-end | Arya | `index.php`, `tambah.php`, `edit.php`, `layout/` |
+| Back-end | Zagita | `config/`, `proses/`, `database.sql` |
+
+## Cara Menjalankan
+
+1. Salin folder ke `htdocs` (XAMPP) atau `www` (Laragon), lalu jalankan Apache dan MySQL.
+2. Import `database.sql` lewat phpMyAdmin (tab Import) atau HeidiSQL.
+3. Buka http://localhost/uts_pemweb/
+
+Butuh PHP 8.1 ke atas.
